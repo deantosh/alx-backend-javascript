@@ -8,8 +8,7 @@ export default function handleProfileSignup() {
       const [photoResponse, userResponse] = results;
       console.log(photoResponse.body, userResponse.firstName, userResponse.lastName);
     })
-    .catch(() => console.error('Signup system offline'))
-    .finally(() => {
-      // left empty intentionally
+    .catch(() => {
+      console.log('Signup system offline');
     });
 }
