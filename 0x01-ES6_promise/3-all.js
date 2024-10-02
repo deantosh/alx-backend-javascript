@@ -8,7 +8,7 @@ export default function handleProfileSignup() {
       const [photoResponse, userResponse] = results;
       console.log(photoResponse.body, userResponse.firstName, userResponse.lastName);
     })
-    .catch(() => new Error('Failed to sign up profile'))
+    .catch(() => console.error('Signup system offline'))
     .finally(() => {
       // left empty intentionally
     });
