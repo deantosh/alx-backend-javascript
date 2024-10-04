@@ -8,6 +8,10 @@ export default class Airport {
     return `[Object ${this._code}]`;
   }
 
+  get [Symbol.toStringTag]() {
+    return this._code;
+  }
+
   // Validate functions
   static _validateString(value, attributeName) {
     if (typeof value !== 'string') {
