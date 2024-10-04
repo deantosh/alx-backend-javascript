@@ -4,12 +4,12 @@ export default class Airport {
     this._code = Airport._validateString(code, 'code');
   }
 
-  toString() {
-    return `[Object ${this._code}]`;
-  }
-
   get [Symbol.toStringTag]() {
     return this._code;
+  }
+
+  toString() {
+    return `[object ${this._code}]`;
   }
 
   // Validate functions
