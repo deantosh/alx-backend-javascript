@@ -1,10 +1,12 @@
 {
   "name": "0x06-unittests_in_js",
   "version": "1.0.0",
+  "type": "module",
   "description": "Project focusses on the implementations of unittest in JS. A series of tasks have been provided to assist in understanding unittest.",
   "main": "0-calcul.js",
   "dependencies": {},
   "devDependencies": {
+    "chai": "^5.1.2",
     "mocha": "^10.8.2"
   },
   "scripts": {
