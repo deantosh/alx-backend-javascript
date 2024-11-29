@@ -1,6 +1,6 @@
 // Function that adds, subtracts and divides 2 numbers based on the type operation.
 
-function calculateNumber(type, a, b) {
+export default function calculateNumber(type, a, b) {
   if (type === 'SUM') {
     return Math.round(a) + Math.round(b);
   }
@@ -18,5 +18,3 @@ function calculateNumber(type, a, b) {
     return 'Error';
   }
 }
-
-module.exports = calculateNumber;
