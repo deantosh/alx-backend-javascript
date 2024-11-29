@@ -1,5 +1,6 @@
-const { expect } = require('chai');
-const calculateNumber = require('./2-calcul_chai');
+import chai from 'chai';
+const { expect } = chai;
+import calculateNumber from './2-calcul_chai.js';
 
 describe('calculateNumber function tests', function () {
   it('should add two numbers correctly when type is SUM', function () {
@@ -19,7 +20,7 @@ describe('calculateNumber function tests', function () {
 
   it('should return "Error" when dividing by zero', function () {
     const result = calculateNumber('DIVIDE', 7.4, 0);
-    expect(result).to.equal(0);
+    expect(result).to.equal('Error');
   });
 
   it('should return "Error" for an unknown type', function () {
